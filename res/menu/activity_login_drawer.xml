@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_viewbooking"
+            android:icon="@drawable/ic_library_add_black_24dp"
+            android:title="View Bookings"
+            android:iconTint="@color/white"/>
+        <item
+            android:id="@+id/nav_Rateapp"
+            android:icon="@drawable/ic_star_border_black_24dp"
+            android:title="Rate our App"
+            android:iconTint="@color/white"/>
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_feedback_black_24dp"
+            android:title="feedback"
+            android:iconTint="@color/white"/>
+        <item
+            android:id="@+id/nav_About"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="About"
+            android:iconTint="@color/white"/>
+
+        <item
+            android:id="@+id/nav_Logout"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:title="Log Out"
+            android:iconTint="@color/white"/>
+
+    </group>
+
+
+
+</menu>

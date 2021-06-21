@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".BookSeatActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="3"
+        tools:context="com.example.screenplay.BookSeatActivity" >
+        <ImageView
+            android:id="@+id/screen"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/seat" />
+
+        <TextView
+            android:id="@+id/silvertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="Silver"
+            android:textColor="@color/Black"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/silver"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/seat_outline"
+            android:minHeight="150dp" >
+        </RelativeLayout>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/goldentext"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="Golden"
+            android:textColor="@color/Black"
+            android:textSize="15sp" />
+        <RelativeLayout
+            android:id="@+id/golden"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/seat_outline"
+            android:minHeight="150dp" >
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/viptext"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="VIP"
+            android:textColor="@color/Black"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/VIP"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/seat_outline"
+            android:minHeight="20dp">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+
+        <TextView
+                android:id="@+id/silverrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="20dp"
+                android:text="Silver=100Rs"
+                android:textStyle="bold"
+                android:textColor="@color/Black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/goldenrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Golden=100Rs"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/silverrate"
+                android:textStyle="bold"
+                android:textColor="@color/Black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/viprate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/goldenrate"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="1dp"
+                android:text="VIP=150Rs"
+                android:textColor="@color/Black"
+                android:layout_marginBottom="55dp"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/total_seats_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="150dp"
+            android:text="Number Of Seats"
+            android:textColor="@color/Black"
+            android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/total_seats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginEnd="20dp"
+                android:textColor="#0F0"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/total_cost_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="150dp"
+                android:text="Total Cost"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/total_seats_label"
+                android:textColor="@color/Black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/total_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@+id/total_seats"
+                android:layout_marginBottom="20dp"
+                android:textColor="#0F0"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/clickforpayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="70dp"
+                android:text="Click here for the Payments..."
+                android:layout_marginEnd="15dp"
+                android:layout_below="@+id/total_cost_label"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/darkViolet"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:orientation="vertical"
+    tools:context=".ratingsActivity">
+
+    <RatingBar
+        android:id="@+id/ratingBar_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="43dp"
+        android:numStars="5"
+        android:progressBackgroundTint="@color/gray"
+        android:progressTint="@color/peech"
+        android:rating="2.5"
+        android:stepSize="0.5" />
+
+    <TextView
+        android:id="@+id/text_id"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar_id"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="52dp"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/subrating"
+        android:layout_width="102dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/text_id"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="73dp"
+        android:background="@drawable/datebutton"
+        android:text="Submit"
+        android:textColor="@color/white" />
+
+
+
+</RelativeLayout>

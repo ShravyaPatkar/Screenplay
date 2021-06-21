@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardElevation="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@color/peechlight">
+        
+        <TextView
+            android:layout_width="160dp"
+            android:id="@+id/view_moviename"
+            android:layout_height="wrap_content"
+            android:text="Movie Name"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="160dp"
+            android:id="@+id/view_movielanguage"
+            android:layout_below="@+id/view_moviename"
+            android:layout_height="wrap_content"
+            android:text="Movie Language"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="160dp"
+            android:id="@+id/view_location"
+            android:layout_below="@+id/view_movielanguage"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="160dp"
+            android:id="@+id/view_theatre"
+            android:layout_below="@+id/view_location"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Selected Theatre"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_below="@+id/view_theatre"
+            android:id="@+id/view_date"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Show Date"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_date"
+            android:id="@+id/view_timing"
+            android:text="Show Timing"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_seatnumber"
+            android:layout_below="@+id/view_timing"
+            android:text="Seat Number"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="160dp"
+            android:id="@+id/view_noofbookedseats"
+            android:layout_below="@+id/view_seatnumber"
+            android:layout_height="wrap_content"
+            android:text="No of booked seats"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_noofbookedseats"
+            android:id="@+id/view_cost"
+            android:text="Total cost"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            />
+        
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

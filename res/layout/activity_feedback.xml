@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feedbackActivity">
+
+    <EditText
+        android:id="@+id/emaildata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="500dp"
+        android:layout_marginTop="261dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="500dp"
+        android:background="@drawable/input_design"
+        android:hint="Enter Email..."
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/messagedata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="500dp"
+        android:layout_marginTop="341dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="500dp"
+        android:background="@drawable/input_design"
+        android:hint="Enter Feedback.."
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/send_btn"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/login_email_input"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/datebutton"
+        android:padding="10dp"
+        android:text="Send Feedback"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/details_btn"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="489dp"
+        android:background="@drawable/datebutton"
+        android:padding="10dp"
+        android:enabled="false"
+        android:text="View sent details"
+        android:textColor="@color/white" />
+
+
+
+</RelativeLayout>

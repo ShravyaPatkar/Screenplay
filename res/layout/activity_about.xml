@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+
+
+    <com.codesgood.views.JustifiedTextView
+        android:layout_width="match_parent"
+        android:id="@+id/abouttxt"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="This Software is basically made for local theatres in Udupi for providing the customers an anytime and anywhere service for booking movie tickets and providing information about the movies and their schedule online.\n\n The user can easily be able to know about the movies released and then make the choice.This app is useful for both promoters and customers equally.It can be run on any android phones.\n\n For any Queries please send mail to screenplayservice@gmail.com"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/Black"
+        android:textStyle="normal"
+
+        />
+
+
+
+</ScrollView>
